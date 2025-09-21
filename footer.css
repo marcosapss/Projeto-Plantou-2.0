@@ -1,0 +1,128 @@
+/* Footer minimalista horizontal com política de privacidade */
+.site-footer {
+  background: #1b5e20;
+  color: #fff;
+  padding: 8px 0 4px 0;
+  font-size: 0.98rem;
+  border-top: 2px solid #25641a;
+  margin-top: 16px;
+  margin-bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.foot-min {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 6px 10px;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 4px 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+@media (max-width: 700px) {
+  .foot-min {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 4px 6px;
+    justify-items: center;
+    text-align: center;
+  }
+}
+.brand-min {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1.1em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  justify-self: start;
+}
+.foot-nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.foot-nav a {
+  color: #b2dfdb;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.97rem;
+  transition: color 0.2s;
+}
+.foot-nav a:hover {
+  color: #ff9800;
+}
+.foot-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.93rem;
+  color: #b2dfdb;
+  justify-self: end;
+}
+@media (max-width: 700px) {
+  .foot-min {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 8px 8px;
+    justify-items: center;
+    text-align: center;
+  }
+  .foot-nav {
+    gap: 10px;
+    font-size: 0.95em;
+    justify-content: center;
+  }
+  .foot-meta {
+    gap: 8px;
+    font-size: 0.91em;
+    justify-self: center;
+  }
+  .brand-min {
+    justify-self: center;
+  }
+}
+.link-min {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 0.97rem;
+  transition: color 0.2s;
+}
+.link-min:hover {
+  color: #ff9800;
+}
+.top-link {
+  background: #25641a;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.top-link:hover {
+  background: #388e3c;
+}
+@media (max-width: 700px) {
+  .foot-min {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 0 8px;
+  }
+  .foot-nav {
+    gap: 10px;
+    font-size: 0.95em;
+  }
+  .foot-meta {
+    gap: 8px;
+    font-size: 0.91em;
+  }
+}
